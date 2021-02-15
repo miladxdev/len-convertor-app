@@ -1,0 +1,84 @@
+* {
+    font-family: "@Microsoft YaHei UI Light";
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .1s;
+}
+
+body {
+    padding: 220px;
+    background: #a3aebd;
+}
+.convertor {
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    margin: auto;
+    /* border: 1px dashed blue; */
+    border-radius: 20px;
+    background-image: linear-gradient(
+        to bottom, #E0EAFC, #CFDEF3
+    );
+    box-shadow:
+        0  0px 10px 5px rgba(154,160,185,0.2),
+        0  0px 40px 5px rgba(166,173,201,0.4);
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: medium;
+    border:none;
+    border-radius: 5px;
+}
+select:focus {
+    outline: none;
+}
+select:hover {
+    background: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0  0 10px 4px rgba(154,160,185,.1);
+}
+option {
+    border: none;
+    color: white;
+    background: #333;
+}
+
+input[type=text] {
+    border: none;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
+    font-size: large;
+    background: transparent;
+}
+input[type=text]:hover {
+    background: #c0cbd8;
+}
+input[type=text]:focus {
+    outline: none;
+    background: #c0cbd8;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 30px;
+    /* border: 1px solid black; */
+}
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.buttons button:focus {
+   outline-color: #a3aebd;
+}
+.buttons button:hover {
+    background: #a3aebd;
+}
